@@ -1,34 +1,36 @@
-import sys
-
 import pyfiglet
-import time
 import os
 
-clear = lambda: os.system('cls')
+listOfReasons = ["1. I love problem solving and coding! \n",
+                 "2. I have always loved space and astronomy! \n"
+                 "3. Local company - family lives just outside Basingstoke  \n",
+                 "4. IBM is at the cutting edge of using AI and cloud computing to try and solve environmental and climate challenges \n"]
 
-list_of_reasons = ["1. I love problem solving and coding! \n",
-                   "2. I have always loved space and astronomy! \n",
-                   "3. IBM is at the cutting edge of research in fields such as applying AI and cloud computing to fight climate change \n"]
+listOfGoals = ["1. To learn new skills and improve existing ones by working with the experienced engineers at IBM \n",
+               "2. To get to apply my knowledge to solve real world problems! \n",
+               "3. I have always wanted to work on satellites - links my interests in programming and space - I can see a clear path to achieving this through IBM"]
 
-hello_banner = pyfiglet.figlet_format("Hello, I am Chris!")
-why_banner = pyfiglet.figlet_format("Why did I choose IBM?")
-
-#Python Typing Text Effect - www.101computing.net/python-typing-text-effect/
-def typingPrint(text):
-  for character in text:
-    sys.stdout.write(character)
-    sys.stdout.flush()
-    time.sleep(0.05)
+helloBanner = pyfiglet.figlet_format("Hello, I am Chris!")
+whyBanner = pyfiglet.figlet_format("Why did I choose IBM?")
+goalsBanner = pyfiglet.figlet_format("What do I want to achieve at IBM?")
 
 
-print(hello_banner)
-time.sleep(5)
+def print_list(nameOfList):
+    for counter in range(0, len(nameOfList)):
+        print(nameOfList[counter])
+        input()
 
-print(why_banner)
-time.sleep(3)
+
+def presentation_flow():
+    print(helloBanner)
+    input()
+    print(whyBanner)
+    input()
+    print_list(listOfReasons)
+    input()
+    print(goalsBanner)
+    input()
+    print_list(listOfGoals)
 
 
-for counter in range(0, len(list_of_reasons)):
-    currentText = list_of_reasons[counter]
-    typingPrint(currentText)
-    time.sleep(2)
+presentation_flow()

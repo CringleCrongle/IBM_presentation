@@ -1,20 +1,22 @@
 import pyfiglet
 
 listOfReasons = ["1. I love problem solving and coding! \n",
-                 "2. I have always loved space and astronomy! \n",
-                 "3. Local company - family lives just outside Basingstoke \n",
-                 "4. IBM is at the cutting edge of using AI and cloud computing to try and solve environmental and "
-                 "climate challenges \n"]
+                 "2. Local company - family lives just outside Basingstoke \n",
+                 "3. I have always loved space and astronomy! - IBM has been working in this field for over 50 years "
+                 "& helped with landing on the Moon \n",
+                 "4. IBM's Space Situational Awareness Project -  helping to try and solve the issue of space debris "
+                 "and overcrowding \n"]
+
 
 listOfGoals = ["1. To learn new skills and improve existing ones by working with the experienced engineers at IBM \n",
                "2. To get to apply my knowledge to solve real world problems! \n",
                "3. I have always wanted to work on satellites - links my interests in programming and space - I can "
-               "see a clear path to achieving this through IBM"]
+               "see a clear path to achieving this with IBM"]
 
-helloBanner = pyfiglet.figlet_format("Hello, I'm  Chris!")
+helloBanner = pyfiglet.figlet_format("Hi, I'm  Chris!")
 whyBanner = pyfiglet.figlet_format("Why did I choose IBM?")
 goalsBanner = pyfiglet.figlet_format("What do I want to achieve at IBM?")
-q_and_aBanner = pyfiglet.figlet_format("Time for Q&As!")
+q_and_aBanner = pyfiglet.figlet_format("Any questions?")
 
 
 def print_list(name_of_list):
@@ -25,6 +27,7 @@ def print_list(name_of_list):
 
 def presentation_flow():
     print(helloBanner)
+    print("I'm a second year Computer Science student at Swansea University")
     input()
     print(whyBanner)
     input()
